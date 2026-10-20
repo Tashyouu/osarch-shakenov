@@ -18,26 +18,23 @@ Date: 08.10.2026
 | Virtualization present & enabled | *Yes* | `systeminfo` (Hyper-V Requirements) |
 
 ## What I did
-I used Windows PowerShell to collect information about my personal laptop, including the operating system, hardware specifications, processor, memory, and storage. Here are the commands I used: <br/>
-- Overview — `Get-ComputerInfo`
-- Memory (Screenshot) — `systeminfo`
-- Disks (Screenshot) — `Get-Volume`
-- OS (Screenshot) — `systeminfo`
-- Virtualization present & enabled (Screenshot) — `systeminfo` (Hyper-V Requirements)
-- CPU model + cores + threads (.txt file in evidence)  — `Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors`
-- Total memory + modules + speed (.txt file in evidence) — `Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Capacity, Speed, Manufacturer`
-- Disk model + type (.txt file in evidence) — `Get-PhysicalDisk | Select-Object FriendlyName, MediaType, BusType, Size`
-- Firmware type (.txt file in evidence) — `(Get-ComputerInfo).BiosFirmwareType`
-- BIOS version + date (.txt file in evidence) — `Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate`
+I used Windows PowerShell to collect information about my personal laptop, including the operating system, hardware specifications, processor, memory, and storage. Here are the commands I used, presented both in screenshots and in raw txt files: <br/>
 
-
-`Get-ComputerInfo` <br/> 
+  Screenshots + Commands:
+- Overview `Get-ComputerInfo` <br/> 
 ![OS information](evidence/os.png) <br/>
-`systeminfo`<br/> 
+- OS & Memory `systeminfo`<br/> 
 ![OS-CPU-RAM](evidence/os-cpu-memory.png) <br/> 
 ![hyper-v](evidence/hyper-v.png) <br/>
-`Get-Volume`<br/> 
+- Disks `Get-Volume`<br/> 
 ![disks](evidence/disks.png) <br/>
+
+  Text files + Commands:
+- CPU model + cores + threads  — `Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors` [evidence/cpu.txt](evidence/cpu.txt)
+- Total memory + modules + speed — `Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Capacity, Speed, Manufacturer` [evidence/memory.txt](evidence/memory.txt)
+- Disk model + type — `Get-PhysicalDisk | Select-Object FriendlyName, MediaType, BusType, Size` [evidence/disk.txt](evidence/disk.txt)
+- Firmware type — `(Get-ComputerInfo).BiosFirmwareType` [evidence/firmware.txt](evidence/firmware.txt)
+- BIOS version + date — `Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate` [evidence/bios.txt](evidence/bios.txt)
 
 ## Result
 Successfully collected basic system information using Windows PowerShell. The inventory included the operating system, firmware, processor, installed memory, storage devices, and computer model.
@@ -48,12 +45,14 @@ The commands demonstrated how to query Windows system information using built-in
 The RAM value was displayed in megabytes, which was less convenient to read. I interpreted the value and converted it to gigabytes for easier understanding.
 
 ## Evidence
+Text Files:
 - [evidence/cpu.txt](evidence/cpu.txt) — raw CPU output
 - [evidence/memory.txt](evidence/memory.txt) — raw memory modules
 - [evidence/disk.txt](evidence/disk.txt) — raw physical disk
 - [evidence/firmware.txt](evidence/firmware.txt) — firmware type
 - [evidence/bios.txt](evidence/bios.txt) — BIOS version and date
-- [evidence/disks.png](evidence/disks.png) — Disks info (screenshot)
+Screenshots:
+- [evidence/disks.png](evidence/disks.png) — Disks info
 - [evidence/hyper-v.png](evidence/hyper-v.png) — Hyper-V (Virtualisation) info
 - [evidence/os-cpu-memory.png](evidence/os-cpu-memory.png) — OS, CPU and RAM memory info
 - [evidence/os.png](evidence/os.png) — OS info
