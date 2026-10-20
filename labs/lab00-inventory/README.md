@@ -24,11 +24,11 @@ I used Windows PowerShell to collect information about my personal laptop, inclu
 - Disks — `Get-Volume`
 - OS — `systeminfo`
 - Virtualization present & enabled — `systeminfo` (Hyper-V Requirements)
-- CPU model + cores + threads — `Get-CimInstance Win32_Processor`
-- Total memory + modules + speed — `Get-CimInstance Win32_PhysicalMemory`
-- Disk model + type — `Get-PhysicalDisk`
+- CPU model + cores + threads — `Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors`
+- Total memory + modules + speed — `Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Capacity, Speed, Manufacturer`
+- Disk model + type — `Get-PhysicalDisk | Select-Object FriendlyName, MediaType, BusType, Size`
 - Firmware type — `(Get-ComputerInfo).BiosFirmwareType`
-- BIOS version + date — `Get-CimInstance Win32_BIOS`
+- BIOS version + date — `Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate`
 
 
 `Get-ComputerInfo` <br/> 
