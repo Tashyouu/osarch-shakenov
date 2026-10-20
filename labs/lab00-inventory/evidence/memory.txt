@@ -1,0 +1,4 @@
+BankLabel       Capacity Speed Manufacturer
+---------       -------- ----- ------------
+P0 CHANNEL A 17179869184  3200 Micron Technology
+P0 CHANNEL B 17179869184  3200 Micron Technology
