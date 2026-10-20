@@ -11,7 +11,7 @@ Date: 08.10.2026
 |------|-------|----------------|
 | CPU model / cores / threads | *AMD Ryzen 7 5800H, 8 cores, 16 threads* | `Get-CimInstance Win32_Processor` |
 | Total memory + modules + speed | *32 GB (2 × 16 GB @ 3200 MHz)* | `Get-CimInstance Win32_PhysicalMemory` |
-| Disk model + type | *SAMSUNG MZVLB1T0HBLR-000H1, SSD, NVMe, 1024209543168* | `Get-PhysicalDisk` |
+| Disk model + type | *SAMSUNG MZVLB1T0HBLR-000H1, SSD, NVMe, (~953 GB)* | `Get-PhysicalDisk` |
 | Free space on volume | *46 GB free on C:* | `Get-Volume` |
 | Firmware type | *UEFI* | `(Get-ComputerInfo).BiosFirmwareType` |
 | BIOS version + date | *F.09, 16.07.2021* | `Get-CimInstance Win32_BIOS` |
