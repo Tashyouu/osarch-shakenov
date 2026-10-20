@@ -20,15 +20,15 @@ Date: 08.10.2026
 ## What I did
 I used Windows PowerShell to collect information about my personal laptop, including the operating system, hardware specifications, processor, memory, and storage. Here are the commands I used: <br/>
 - Overview — `Get-ComputerInfo`
-- Memory — `systeminfo`
-- Disks — `Get-Volume`
-- OS — `systeminfo`
-- Virtualization present & enabled — `systeminfo` (Hyper-V Requirements)
-- CPU model + cores + threads — `Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors`
-- Total memory + modules + speed — `Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Capacity, Speed, Manufacturer`
-- Disk model + type — `Get-PhysicalDisk | Select-Object FriendlyName, MediaType, BusType, Size`
-- Firmware type — `(Get-ComputerInfo).BiosFirmwareType`
-- BIOS version + date — `Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate`
+- Memory (Screenshot) — `systeminfo`
+- Disks (Screenshot) — `Get-Volume`
+- OS (Screenshot) — `systeminfo`
+- Virtualization present & enabled (Screenshot) — `systeminfo` (Hyper-V Requirements)
+- CPU model + cores + threads (.txt file in evidence)  — `Get-CimInstance Win32_Processor | Select-Object Name, NumberOfCores, NumberOfLogicalProcessors`
+- Total memory + modules + speed (.txt file in evidence) — `Get-CimInstance Win32_PhysicalMemory | Select-Object BankLabel, Capacity, Speed, Manufacturer`
+- Disk model + type (.txt file in evidence) — `Get-PhysicalDisk | Select-Object FriendlyName, MediaType, BusType, Size`
+- Firmware type (.txt file in evidence) — `(Get-ComputerInfo).BiosFirmwareType`
+- BIOS version + date (.txt file in evidence) — `Get-CimInstance Win32_BIOS | Select-Object SMBIOSBIOSVersion, ReleaseDate`
 
 
 `Get-ComputerInfo` <br/> 
