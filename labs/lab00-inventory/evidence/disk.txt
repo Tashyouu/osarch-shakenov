@@ -1,0 +1,3 @@
+FriendlyName               MediaType BusType          Size
+------------               --------- -------          ----
+SAMSUNG MZVLB1T0HBLR-000H1 SSD       NVMe    1024209543168
