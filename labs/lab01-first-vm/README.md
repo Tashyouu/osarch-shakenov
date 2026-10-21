@@ -1,31 +1,27 @@
 # Lab 1 — Your first virtual machine
 
-Pair: DAMIR NIYAZBEK (My pair)
-Driver first half: TAMERLAN SHAKENOV (Me)
-Machine: HP Victus 16-e0XXX (Laptop)
-Date: 20.10.2026
+Pair: none   Driver first half: Tamerlan Shakenov
+Machine: HP Victus 16-0xxx, Windows 10 Professional, VMware Workstation Pro, guest Ubuntu Server 26.04.1 LTS
+Date: 22.10.2026
 
 ## What I did
+1. Installed VMware Workstation Pro 17, version 26.0.1.25688693. Licence: https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
+2. Created VM lab01-ubuntu: 2 vCPU, 8 GB RAM, 25 GB dynamic SSD disk, NAT network.
+3. Installed Ubuntu Server, took snapshot clean-install.
+4. Broke it: `sudo sed -i 's/dhcp4: true/dhcp4: false/' /etc/netplan/*.yaml` && `sudo netplan apply`
+5. Rolled back to clean-install: Used VMware Snapshot Manager to revert the virtual machine state to clean-install snapshot
 
-Decided the resources:
-Steps, with commands in code blocks. Not prose about the steps.
-
-```
-<command>
-<output, trimmed>
-```
+## Resource justification
+I allocated 2 vCPU and 8 GB of RAM to the virtual machine because this is more than sufficient for a headless Ubuntu Server to run smoothly on my modern laptop, while leaving enough resources for the Windows 10 host system to function without any lag at all.
 
 ## Result
-Resource allocation:
-vCPU - 2 cores - justification: I decided to give it 2 cores since my CPU has 8 cores and 16 threads. </br>
-Memory - 8 GB - justification: Since my laptop has 32 GB RAM, there's no issue with memory allocation for VM.
-Disk - 25 GB (dynamically allocated) - justification: I cleared up some space on my disk for the Virtual Machine, and now it should have no issue for host machine to allocate more space in the future.
-Network - NAT - justification: I selected NAT to allow the virtual machine to access the internet through the host machine's network connection.
+The VM boots; the break-and-rollback cycle is shown in the evidence below.
 
 ## What did not work the first time
-
-At least one thing. What I saw, what it turned out to be, what I did about it.
+Initially, when I tried to run the SSH command from my host laptop, the resulting text file was completely empty. It turned out that the network connection to the VM was down because I changed the DHCP settings incorrectly and applied the network configuration before saving the output. To fix this, I used VMware Snapshot Manager to roll back to the clean-install state, double-checked my VM's active IP with 'ip -br a', and successfully reran the command directly without losing connection.
 
 ## Evidence
-
-- [evidence/](evidence/) — one line per file on what it proves
+- [evidence/vm-settings.png](evidence/vm-settings.png) — CPU, memory and disk as configured
+- [evidence/guest-release.txt](evidence/guest-release.txt) — Ubuntu Server is running in the guest
+- [evidence/broken.png](evidence/broken.png) — the guest in its broken state
+- [evidence/snapshot-list.png](evidence/snapshot-list.png) — the snapshot, after the rollback
