@@ -5,7 +5,7 @@ Machine: HP Victus 16-0xxx, Windows 10 Professional, VMware Workstation Pro, gue
 Date: 22.10.2026
 
 ## What I did
-1. Installed VMware Workstation Pro 17, version 26.0.1.25688693. Licence: https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
+1. Installed VMware Workstation Pro 17, version 26.0.1.25688693. Licence: https://blogs.vmware.com/cloud-foundation/2024/11/11/vmware-fusion-and-workstation-are-now-free-for-all-users/
 2. Created VM lab01-ubuntu: 2 vCPU, 8 GB RAM, 25 GB dynamic SSD disk, NAT network.
 3. Installed Ubuntu Server, took snapshot clean-install.
 4. Broke it: `sudo sed -i 's/dhcp4: true/dhcp4: false/' /etc/netplan/*.yaml` && `sudo netplan apply`
