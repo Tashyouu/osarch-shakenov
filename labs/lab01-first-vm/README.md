@@ -1,7 +1,7 @@
 # Lab 1 — Your first virtual machine
 
 Pair: none   Driver first half: Tamerlan Shakenov
-Machine: HP Victus 16-0xxx, Windows 10 Professional, VMware Workstation Pro, guest Ubuntu Server 26.04.1 LTS
+Machine: HP Victus 16-e0XXX (Laptop), Windows 10 Professional, VMware Workstation Pro, guest Ubuntu Server 26.04.1 LTS
 Date: 22.10.2026
 
 ## What I did
