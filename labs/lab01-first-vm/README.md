@@ -24,4 +24,5 @@ Initially, when I tried to run the SSH command from my host laptop, the resultin
 - [evidence/vm-settings.png](evidence/vm-settings.png) — CPU, memory and disk as configured
 - [evidence/guest-release.txt](evidence/guest-release.txt) — Ubuntu Server is running in the guest
 - [evidence/broken.png](evidence/broken.png) — the guest in its broken state
+- [evidence/restored.png](evidence/restored.png) — the guest in its restored state
 - [evidence/snapshot-list.png](evidence/snapshot-list.png) — the snapshot, after the rollback
