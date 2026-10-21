@@ -12,7 +12,7 @@ Date: 22.10.2026
 5. Rolled back to clean-install: Used VMware Snapshot Manager to revert the virtual machine state to clean-install snapshot
 
 ## Resource justification
-I allocated 4 vCPU and 8 GB of RAM to the virtual machine because this is more than sufficient for a headless Ubuntu Server to run smoothly on my modern laptop, while leaving enough resources for the Windows 10 host system to function without any lag at all.
+I allocated 4 vCPU and 8 GB of RAM to the virtual machine because this is more than sufficient for a headless Ubuntu Server to run smoothly on my modern laptop (since it has 8 cores and 16 threads, and 32 GB of RAM), while leaving most of the resources for the Windows 10 host system to function without any lag at all.
 
 ## Result
 The VM boots; the break-and-rollback cycle is shown in the evidence below.
