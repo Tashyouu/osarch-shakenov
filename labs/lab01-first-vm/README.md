@@ -6,13 +6,13 @@ Date: 22.10.2026
 
 ## What I did
 1. Installed VMware Workstation Pro 17, version 26.0.1.25688693. Licence: https://blogs.vmware.com/cloud-foundation/2024/11/11/vmware-fusion-and-workstation-are-now-free-for-all-users/
-2. Created VM lab01-ubuntu: 2 vCPU, 8 GB RAM, 25 GB dynamic SSD disk, NAT network.
+2. Created VM lab01-ubuntu: 4 vCPU, 8 GB RAM, 25 GB dynamic SSD disk, NAT network.
 3. Installed Ubuntu Server, took snapshot clean-install.
 4. Broke it: `sudo sed -i 's/dhcp4: true/dhcp4: false/' /etc/netplan/*.yaml` && `sudo netplan apply`
 5. Rolled back to clean-install: Used VMware Snapshot Manager to revert the virtual machine state to clean-install snapshot
 
 ## Resource justification
-I allocated 2 vCPU and 8 GB of RAM to the virtual machine because this is more than sufficient for a headless Ubuntu Server to run smoothly on my modern laptop, while leaving enough resources for the Windows 10 host system to function without any lag at all.
+I allocated 4 vCPU and 8 GB of RAM to the virtual machine because this is more than sufficient for a headless Ubuntu Server to run smoothly on my modern laptop, while leaving enough resources for the Windows 10 host system to function without any lag at all.
 
 ## Result
 The VM boots; the break-and-rollback cycle is shown in the evidence below.
