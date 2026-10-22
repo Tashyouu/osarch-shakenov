@@ -9,7 +9,7 @@ Date: 22.10.2026
 2. Created VM lab01-ubuntu: 4 vCPU, 8 GB RAM, 25 GB dynamic SSD disk, NAT network.
 3. Installed Ubuntu Server, took snapshot clean-install.
 4. Broke it: `sudo sed -i 's/dhcp4: true/dhcp4: false/' /etc/netplan/*.yaml` && `sudo netplan apply`
-5. Rolled back to clean-install: Used VMware Snapshot Manager to revert the virtual machine state to clean-install snapshot
+5. Rolled back to clean-install: Used VMware Snapshot Manager to revert the virtual machine state to clean-install snapshot.
 
 ## Resource justification
 I allocated 4 vCPU and 8 GB of RAM to the virtual machine because this is more than sufficient for a headless Ubuntu Server to run smoothly on my modern laptop (since it has 8 cores and 16 threads, and 32 GB of RAM), while leaving most of the resources for the Windows 10 host system to function without any lag at all.
