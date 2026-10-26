@@ -73,7 +73,7 @@ The host operating system resource footprint experienced a major degradation cur
 * **Resolution:** Terminated the active SSH subshell tracking profile with an `exit` procedure, verified path layouts inside native Git Bash environments, and issued directory-relative targets directly using native host shell variables.
 
 ## Evidence
-
+- [evidence/hardware.png](evidence/hardware.png) — Visual record of the assigned vCPU, RAM, disk and vTPU to the guest Windows 11.
 - [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Proves the assigned IPv4 interfaces and local subnet boundaries on the Windows guest configuration.
 - [evidence/ip-addr-linux.txt](evidence/ip-addr-linux.txt) — Proves the assigned network adapter configuration and native address structures for the active Ubuntu host.
 - [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — Proves bi-directional echo resolution over host-to-guest subnets alongside functional internet routing metrics.
