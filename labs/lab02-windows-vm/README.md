@@ -45,15 +45,14 @@ Fetched 3,101 kB in 3s (1,086 kB/s)
 ```
 
 ## Network diagram
-
               Internet
                  |
             Host laptop
                  |
      [VMware NAT · VMnet8 · 192.168.122.0/24]
           /                        \
-lab01-ubuntu                  lab02-windows
-192.168.122.129               192.168.122.130
+    lab01-ubuntu                  lab02-windows
+    192.168.122.129               192.168.122.130
 
 ## Result
 
