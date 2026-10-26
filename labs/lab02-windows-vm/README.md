@@ -1,8 +1,9 @@
 # Lab 2 — A Windows guest, and a network between them
 
-Pair: None   Driver first half: Tamerlan Shakenov (Me)
-Machine: HP Victus 16-e0XXX (Laptop), Windows 10 Professional, 32 GB RAM, 8 cores 16 threads, VMware Workstation Pro, guest Ubuntu Server 26.04.1 LTS + Windows 11 Enterprise eval.
-Date: 27.10.2026
+Pair: None </br>   
+Driver first half: Tamerlan Shakenov (Me) </br>
+Machine: HP Victus 16-e0XXX (Laptop), Windows 10 Professional, 32 GB RAM, 8 cores 16 threads, VMware Workstation Pro, guest Ubuntu Server 26.04.1 LTS + Windows 11 Enterprise eval. </br>
+Date: 27.10.2026 </br>
 
 ## What I did
 
