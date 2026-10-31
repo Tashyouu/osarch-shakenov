@@ -27,7 +27,7 @@ Once VMware Workstation is successfully installed and your ISO files are ready, 
 4. Name the machine clearly as `lab01-ubuntu`. Allocate **8192 MB (8 GB) RAM** and **4 CPU cores** away from the default presets to match development workloads.
 5. Repeat this exact process for the second machine: select the Windows 11 ISO, name it `lab02-windows`, and allocate **4096 MB (4 GB) RAM** with **2 CPU cores**.
 
-Once both creation processes are complete, you will see both functional guest environments initialized inside your VMware library sidebar and ready for their first clean boot, as shown below:
+Once both creation processes are complete, you will see both functional guest environments initialized inside your VMware library sidebar and ready for their first clean boot, as shown below: <br>
 ![](evidence/01-new-vm-wizard.png)
 
 
@@ -37,12 +37,12 @@ Once both creation processes are complete, you will see both functional guest en
 2. Set the virtual disk size to **64 GB** for Windows 11.
 
 *Architectural Choice:* Windows 11 has strict storage requirements (minimum 64 GB) to handle system files, temporary storage, and cumulative Windows Updates comfortably without triggering system crashes. A server Ubuntu environment, however, operates efficiently within a tight 25 GB partition under typical development testing loads.
-*(Below is an example of the storage configuration interface captured from the lab02-windows setup)*
+*(Below is an example of the storage configuration interface captured from the lab02-windows setup)* <br>
 ![](evidence/02-disk-settings.png)
 
 ## Step 3: Networking Configuration
 1. Open the virtual machine settings in VMware and select **Network Adapter**.
-2. Strictly select the **NAT** (Network Address Translation) option.
+2. Strictly select the **NAT** (Network Address Translation) option. <br>
 ![](evidence/03-network-adapter.png)
 
 *Why NAT and not Bridged:* The university teaching network filters connected devices strictly by physical MAC address. A bridged setup forces the virtual machine to broadcast its own unique MAC address to the local network switch, which results in an immediate internet lockout by the campus firewall. By using VMware's NAT engine, the guest machines share your host laptop's authorized IP and MAC address, gaining seamless internet access without network conflicts.
@@ -50,5 +50,5 @@ Once both creation processes are complete, you will see both functional guest en
 ## Step 4: Environment Verification
 1. Boot both machines to confirm they can reach the internet and see each other.
 2. Take a system snapshot in VMware to save the clean state.
-*(Below is the baseline snapshot tree verified via the Snapshot Manager for the Windows instance)*
+*(Below is the baseline snapshot tree verified via the Snapshot Manager for the Windows instance)* <br>
 ![](evidence/06-snapshot-list.png)
