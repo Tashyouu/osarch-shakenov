@@ -13,7 +13,7 @@ Date: 27.10.2026 </br>
 
 3. Configured network mode to VMware NAT (VMnet8) for both guests to keep VMs in an isolated local network while still allowing them to share the host's internet connection. Checked IP configuration on Ubuntu Server guest:
 ```bash
-shakenov@lab01-shakenov:~\$ ip -br a
+shakenov@lab01-shakenov:~$ ip -br a
 lo               UNKNOWN        127.0.0.1/8 ::1/128 
 ens33            UP             192.168.122.129/24 fe80::20c:29ff:fe47:4955/64 
 ```
@@ -31,19 +31,28 @@ Direction             : Inbound
 Action                : Allow
 ```
 
-5. Verified connectivity by launching an automated verification check from Git Bash via SSH:
+5. Verified bidirectional connectivity (Ubuntu <-> Windows + both to the Internet).  
+From Git Bash on the host I connected to the Ubuntu guest over SSH and ran:
+
 ```bash
-ssh shakenov@192.168.122.129 "ping -c 4 192.168.122.130; ping -c 4 ubuntu.com" >> ping-both-ways.txt
+ping -c 4 192.168.122.130
+ping -c 4 ubuntu.com
+```
+On the Windows guest I ran:
+```powershell
+ping 192.168.122.129
+ping ubuntu.com
 ```
 
 6. Set up memory overcommitment by pushing both guests' RAM profiles to 20480 MB (20 GB) each on a 32 GB host system, then generated active load inside the Ubuntu terminal to test resource constraints:
 ```bash
-shakenov@lab01-shakenov:~\$ sudo apt update
+shakenov@lab01-shakenov:~$ sudo apt update
 Hit:1 http://ubuntu.com resolute InRelease
 Get:2 http://ubuntu.com resolute-security InRelease [137 kB]
 Fetched 3,101 kB in 3s (1,086 kB/s)
 43 packages can be upgraded. Run 'apt list --upgradable' to see them.
 ```
+7. After the memory experiment I restored both virtual machines to their normal RAM allocations (4 GB for Windows and 8 GB for Ubuntu) to return the host to a usable state.
 
 ## Network diagram
               Internet
@@ -73,9 +82,9 @@ The host operating system resource footprint experienced a major degradation cur
 * **Resolution:** Terminated the active SSH subshell tracking profile with an `exit` procedure, verified path layouts inside native Git Bash environments, and issued directory-relative targets directly using native host shell variables.
 
 ## Evidence
-- [evidence/hardware.png](evidence/hardware.png) — Visual record of the assigned vCPU, RAM, disk and vTPU to the guest Windows 11.
+- [evidence/hardware.png](evidence/hardware.png) — Visual record of the assigned vCPU, RAM, disk and vTPM to the guest Windows 11.
 - [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Proves the assigned IPv4 interfaces and local subnet boundaries on the Windows guest configuration.
 - [evidence/ip-addr-linux.txt](evidence/ip-addr-linux.txt) — Proves the assigned network adapter configuration and native address structures for the active Ubuntu host.
-- [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — Proves bi-directional echo resolution over host-to-guest subnets alongside functional internet routing metrics.
+- [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — Proves bidirectional connectivity (Ubuntu <-> Windows) and internet access from both guests. Raw unedited output.
 - [evidence/host-memory-before.png](evidence/host-memory-before.png) — Visual record of host system performance monitors displaying standard resource states with virtual machines stopped.
 - [evidence/host-memory-after.png](evidence/host-memory-after.png) — Visual record confirming host resource saturation, paging exhaustion, and active hardware constraints under total thread overcommit.
