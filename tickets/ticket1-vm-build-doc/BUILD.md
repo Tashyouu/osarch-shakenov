@@ -2,12 +2,16 @@
 
 This guide is designed for non-technical users to safely spin up a twin-sandbox test environment (Ubuntu Linux & Windows 11) using VMware Workstation.
 
-## Step 1: Base Configuration
+## Step 1: Base Configuration & Initialization
 1. Open VMware Workstation and select **Create a New Virtual Machine**.
-2. Choose your installer disc image (ISO) for Ubuntu Server or Windows 11.
-3. Name the machines clearly: `lab01-ubuntu` and `lab02-windows`.
-4. Allocate **8192 MB (8 GB) RAM** for the Ubuntu Server guest and **4096 MB (4 GB) RAM** for the Windows 11 guest.
+2. Follow the wizard setup: choose your installer disc image (ISO) for Ubuntu Server or Windows 11.
+3. Allocate **8192 MB (8 GB) RAM** for the Ubuntu Server guest and **4096 MB (4 GB) RAM** for the Windows 11 guest.
+4. Name the machines clearly: `lab01-ubuntu` and `lab02-windows`.
+
+Once both creation processes are complete, you will see both functional guest environments initialized inside your VMware library sidebar and ready for their first clean boot, as shown below:
+
 ![](evidence/01-new-vm-wizard.png)
+
 
 ## Step 2: Storage Allocation
 1. Set the virtual disk size to **25 GB** for Ubuntu.
