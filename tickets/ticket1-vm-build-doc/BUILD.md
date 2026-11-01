@@ -13,8 +13,8 @@ Before configuring the virtual environments, you must download and install the h
 
 ### 2. Download Operating System ISO Images
 Download the following installation files and save them into a dedicated folder on your hard drive. **Crucial:** Do not attempt to double-click, open, or extract these files; VMware will read them as virtual discs automatically.
-* **Ubuntu Server LTS ISO:** Download the 64-bit Linux server distribution file from the [Ubuntu Server Download Portal](https://ubuntu.com).
-* **Windows 11 Enterprise ISO:** Download the 90-day fully-featured evaluation image from the [Microsoft Evaluation Center](https://microsoft.com).
+* **Ubuntu Server LTS ISO:** Download the 64-bit Linux server distribution file from the [Ubuntu Server Download Portal](https://ubuntu.com/download/server).
+* **Windows 11 Enterprise ISO:** Download the 90-day fully-featured evaluation image from the [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/download-windows-11-enterprise).
 
 ---
 
@@ -52,3 +52,20 @@ Once both creation processes are complete, you will see both functional guest en
 2. Take a system snapshot in VMware to save the clean state.
 *(Below is the baseline snapshot tree verified via the Snapshot Manager for the Windows instance)* <br>
 ![](evidence/06-snapshot-list.png)
+
+## Step 5: Troubleshooting Network Blocks (Optional)
+If your virtual machines cannot ping each other and you receive a `100% packet loss` error, the Windows Defender Firewall is blocking the traffic by default.
+
+
+To fix this securely without turning off the entire firewall:
+1. Inside the Windows 11 guest, search for and open **Windows Defender Firewall with Advanced Security**.
+2. Click on **Inbound Rules** in the left sidebar.
+3. Scroll down to find the rule named **File and Printer Sharing (Echo Request - ICMPv4-In)**.
+4. Right-click the rule and select **Enable Rule**.
+
+Once enabled, re-run the ping command from your Ubuntu terminal; the connection will now resolve instantly.
+
+## Step 6: Peer Reproduction Verification (To be done soon)
+1. Have a second user run through this guide on a separate computer.
+2. Confirm that both VMs build successfully and pass ICMP ping tests.
+3. Record the verification result in `evidence/07-reproduction-log.txt`.
