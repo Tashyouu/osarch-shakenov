@@ -178,7 +178,6 @@ Note the IPv4 address of the Ethernet adapter.
 
 From Ubuntu terminal:
 ```bash
-# Ping Windows
 ping -c 4 <WINDOWS_IP>
 ```
 
