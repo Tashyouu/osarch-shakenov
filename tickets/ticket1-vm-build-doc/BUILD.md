@@ -180,8 +180,6 @@ From Ubuntu terminal:
 ```bash
 # Ping Windows
 ping -c 4 <WINDOWS_IP>
-
-# Ping internet
 ```
 
 From Windows (Command Prompt or PowerShell):
@@ -193,7 +191,7 @@ Expected result: 0% packet loss in all directions.
 
 The full successful output is saved here:
 
-![](evidence/06-ping-between-guests.txt)
+[06-ping-between-guests.txt](evidence/06-ping-between-guests.txt)
 
 *What this shows:* Bidirectional ping (Ubuntu ↔ Windows) from both guests.
 
@@ -245,7 +243,7 @@ This restores the machine to the exact state after installation in under a minut
 
 Evidence of Ubuntu guest identity:
 
-![](evidence/09-guest-uname.txt)
+[09-guest-uname.txt](evidence/09-guest-uname.txt)
 
 *What this shows:* Full output of `uname -a` confirming the Ubuntu Server installation.
 
