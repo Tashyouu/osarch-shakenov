@@ -72,13 +72,17 @@ The original request from the Office Manager (Aigerim T.) was non-technical and 
 
 ## 4. Evidence
 
-* [01-new-vm-wizard.png](evidence/01-new-vm-wizard.png) — Proves the New Virtual Machine Wizard was used and the correct ISO was selected.
-* [02-disk-settings.png](evidence/02-disk-settings.png) — Verifies the virtual disk size and thin-provisioning settings for both guests.
-* [03-network-adapter.png](evidence/03-network-adapter.png) — Confirms NAT was selected for the network adapter.
-* [04-guest-uname.txt](evidence/04-guest-uname.txt) — Full terminal output of `uname -a` and `lsb_release -a` proving the Ubuntu guest is running the expected kernel and distribution.
-* [05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) — ICMP results showing connectivity in both directions (Ubuntu ↔ Windows) plus successful internet reachability from both guests.
-* [06-snapshot-list.png](evidence/06-snapshot-list.png) — Snapshot Manager showing the clean baseline snapshot exists for both machines.
-* [07-reproduction-log.txt](evidence/07-reproduction-log.txt) — Planned peer reproduction log (not yet completed).
+* [01a-new-vm-wizard-ubuntu.png](evidence/01a-new-vm-wizard-ubuntu.png) — Proves the New Virtual Machine Wizard was used and the correct ISO was selected for the Ubuntu guest.
+* [01b-new-vm-wizard-windows.png](evidence/01b-new-vm-wizard-windows.png) — Proves the New Virtual Machine Wizard was used and the correct ISO was selected for the Windows guest.
+* [02-uefi-tpm-settings.png](evidence/02-uefi-tpm-settings.png) — Verifies that UEFI boot mode and vTPM (Virtual Trusted Platform Module) settings were correctly configured for Windows 11 compatibility.
+* [03-disk-settings.png](evidence/03-disk-settings.png) — Verifies the virtual disk capacity and thin-provisioning settings for the virtual machines.
+* [04-network-adapter.png](evidence/04-network-adapter.png) — Confirms that NAT was selected as the network connection type for the virtual network adapters.
+* [05-windows-no-product-key.png](evidence/05-windows-no-product-key.png) — Demonstrates the Windows 11 installation step where the "I don't have a product key" option was selected.
+* [06-ping-between-guests.txt](evidence/06-ping-between-guests.txt) — Log file containing ICMP ping results showing network connectivity in both directions (Ubuntu ↔ Windows).
+* [07-firewall-icmp-rule.png](evidence/07-firewall-icmp-rule.png) — Screenshot of the Windows Defender Firewall settings showing the enabled inbound rule for ICMPv4 echo requests.
+* [08-snapshot-list.png](evidence/08-snapshot-list.png) — Screenshot of the Snapshot Manager proving a clean, post-installation baseline snapshot was successfully created for both virtual machines.
+* [09-guest-uname.txt](evidence/09-guest-uname.txt) — Text file containing the full terminal output of uname -a proving the specific kernel, hostname (lab01-shakenov), and architecture of the running Ubuntu guest.
+
 
 ---
 

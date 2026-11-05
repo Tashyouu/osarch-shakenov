@@ -6,7 +6,7 @@ The goal is a twin-sandbox test environment:
 - `lab01-ubuntu` — Ubuntu Server LTS
 - `lab02-windows` — Windows 11 Enterprise Evaluation (90-day)
 
-Both machines must be able to reach the internet and ping each other. Clean baseline snapshots must exist so the environment can be restored after experiments.
+Both machines must be able to reach the internet and ping each other. Clean install snapshots must exist so the environment can be restored after experiments.
 
 ---
 
@@ -182,15 +182,11 @@ From Ubuntu terminal:
 ping -c 4 <WINDOWS_IP>
 
 # Ping internet
-ping -c 4 8.8.8.8
-ping -c 4 google.com
 ```
 
 From Windows (Command Prompt or PowerShell):
 ```cmd
 ping -n 4 <UBUNTU_IP>
-ping -n 4 8.8.8.8
-ping -n 4 google.com
 ```
 
 Expected result: 0% packet loss in all directions.
@@ -199,7 +195,7 @@ The full successful output is saved here:
 
 ![](evidence/06-ping-between-guests.txt)
 
-*What this shows:* Bidirectional ping (Ubuntu ↔ Windows) and successful internet connectivity from both guests.
+*What this shows:* Bidirectional ping (Ubuntu ↔ Windows) from both guests.
 
 ### 4.3 Fix Windows Firewall if needed
 
@@ -221,18 +217,18 @@ If Ubuntu cannot ping Windows (100% packet loss):
 
 1. Shut down both virtual machines cleanly (do not just power off).
 2. In VMware, select a VM → **Snapshot** → **Take Snapshot**.
-3. Name: `clean-baseline`  
+3. Name: `clean-install`  
    Description: `Fresh install, network working, before any testing`.
 4. Repeat for the second VM.
 
 ![](evidence/08-snapshot-list.png)
 
-*What this shows:* Snapshot Manager with the `clean-baseline` snapshot present.
+*What this shows:* Snapshot Manager with the `clean-install` snapshot present.
 
 **How to roll back later:**
 1. Select the virtual machine.
 2. **Snapshot** → **Snapshot Manager**.
-3. Select `clean-baseline` → **Go to** → confirm.
+3. Select `clean-install` → **Go to** → confirm.
 
 This restores the machine to the exact state after installation in under a minute.
 
@@ -241,25 +237,24 @@ This restores the machine to the exact state after installation in under a minut
 ## Step 6: Final Verification Checklist
 
 - [ ] Both VMs power on without errors
-- [ ] Ubuntu shows correct kernel and release (`uname -a` and `lsb_release -a`)
+- [ ] Ubuntu shows correct kernel and release (`uname -a`)
 - [ ] Windows 11 Evaluation is running (check Settings → System → About)
 - [ ] Ubuntu can ping Windows
 - [ ] Windows can ping Ubuntu
-- [ ] Both can reach the internet (`ping 8.8.8.8`)
-- [ ] Clean baseline snapshots exist for both machines
+- [ ] Clean-install snapshot exists for both machines
 
 Evidence of Ubuntu guest identity:
 
 ![](evidence/09-guest-uname.txt)
 
-*What this shows:* Full output of `uname -a` and `lsb_release -a` confirming the Ubuntu Server installation.
+*What this shows:* Full output of `uname -a` confirming the Ubuntu Server installation.
 
 ---
 
 ## Step 7: Peer Reproduction (planned)
 
-A second person will later follow this exact guide on a different computer and record the result in `evidence/10-reproduction-log.txt`.  
-Until that file exists, do not claim that peer reproduction has been completed.
+A second person will later follow this exact guide on a different computer and record the result in a new created file `evidence/10-reproduction-log.txt`.  
+Until then, do not claim that peer reproduction has been completed.
 
 ---
 
@@ -269,7 +264,7 @@ Until that file exists, do not claim that peer reproduction has been completed.
 |------------------|-------|-------|--------|---------|---------------------|
 | lab01-ubuntu     | 8 GB  | 4     | 25 GB  | NAT     | (default)           |
 | lab02-windows    | 4 GB  | 2     | 64 GB  | NAT     | UEFI + vTPM enabled |
-| Host remaining   | ~20 GB| ~10   | thin   | –       | –                   |
+| Host remaining   | ~20 GB| ~10   | thin (220 GB)   | –      | –                   |
 
 ---
 
@@ -283,8 +278,7 @@ Until that file exists, do not claim that peer reproduction has been completed.
 | `03-disk-settings.png` | Virtual disk size (25 GB / 64 GB) |
 | `04-network-adapter.png` | NAT network adapter selected |
 | `05-windows-no-product-key.png` | Windows Setup – “I don’t have a product key” |
-| `06-ping-between-guests.txt` | Bidirectional ping + internet connectivity |
+| `06-ping-between-guests.txt` | Bidirectional ping |
 | `07-firewall-icmp-rule.png` | ICMPv4 firewall rule enabled |
-| `08-snapshot-list.png` | Baseline snapshot exists |
+| `08-snapshot-list.png` | Clean-install snapshot exists |
 | `09-guest-uname.txt` | Ubuntu kernel and distribution confirmation |
-| `10-reproduction-log.txt` | Peer reproduction (planned) |
