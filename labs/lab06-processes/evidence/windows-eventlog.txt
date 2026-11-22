@@ -1,0 +1,9 @@
+Machine: Windows 11 guest "lab02-windows" (VMware Workstation)
+
+PS C:\WINDOWS\system32> Get-WinEvent -FilterHashtable @{LogName='System'; ProviderName='Microsoft-Windows-Resource-Exhaustion-Detector'} -MaxEvents 5 | Format-List TimeCreated, Id, Message
+Get-WinEvent : No events were found that match the specified selection criteria.
+At line:1 char:1
++ Get-WinEvent -FilterHashtable @{LogName='System'; ProviderName='Micro ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (:) [Get-WinEvent], Exception
+    + FullyQualifiedErrorId : NoMatchingEventsFound,Microsoft.PowerShell.Commands.GetWinEventCommand

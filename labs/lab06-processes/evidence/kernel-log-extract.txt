@@ -1,0 +1,285 @@
+Nov 22 17:04:13 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:13 lab01-shakenov kernel: CPU: 3 UID: 1000 PID: 4223 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:13 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:13 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:13 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:13 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:13 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:13 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:13 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:13 lab01-shakenov kernel: [   4223]  1000  4223   921528   875168   875017      138        13  7102464        0          1000 stress-ng-vm
+Nov 22 17:04:13 lab01-shakenov kernel: [   4224]  1000  4224   921528   886781   886630      138        13  7196672        0          1000 stress-ng-vm
+Nov 22 17:04:13 lab01-shakenov kernel: [   4227]  1000  4227     4028      980      306      674         0    77824        0             0 sleep
+Nov 22 17:04:13 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4224,uid=1000
+Nov 22 17:04:13 lab01-shakenov kernel: Out of memory: Killed process 4224 (stress-ng-vm) total-vm:3686112kB, anon-rss:3546528kB, file-rss:552kB, shmem-rss:52kB, UID:1000 pgtables:7028kB oom_score_adj:1000
+Nov 22 17:04:20 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:20 lab01-shakenov kernel: CPU: 1 UID: 1000 PID: 4228 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:20 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:20 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:20 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:20 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:20 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:20 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:20 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:20 lab01-shakenov kernel: [   4223]  1000  4223   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:20 lab01-shakenov kernel: [   4228]  1000  4228   921528   841883   841737      132        14  6836224        0          1000 stress-ng-vm
+Nov 22 17:04:20 lab01-shakenov kernel: [   4234]  1000  4234     4028      968      306      662         0    77824        0             0 sleep
+Nov 22 17:04:20 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4223,uid=1000
+Nov 22 17:04:20 lab01-shakenov kernel: Out of memory: Killed process 4223 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:22 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:22 lab01-shakenov kernel: CPU: 2 UID: 1000 PID: 4236 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:22 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:22 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:22 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:22 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:22 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:22 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:22 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:22 lab01-shakenov kernel: [   4228]  1000  4228   921528   906908   906761      133        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:22 lab01-shakenov kernel: [   4236]  1000  4236   921528   843419   843273      133        13  6848512        0          1000 stress-ng-vm
+Nov 22 17:04:22 lab01-shakenov kernel: [   4239]  1000  4239     4028      971      306      665         0    73728        0             0 sleep
+Nov 22 17:04:22 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4228,uid=1000
+Nov 22 17:04:22 lab01-shakenov kernel: Out of memory: Killed process 4228 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:532kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:29 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:29 lab01-shakenov kernel: CPU: 1 UID: 1000 PID: 4240 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:29 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:29 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:29 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:29 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:29 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:29 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:29 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:29 lab01-shakenov kernel: [   4236]  1000  4236   921528   906990   906761      215        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:29 lab01-shakenov kernel: [   4240]  1000  4240   921528   844541   844297      230        14  6856704        0          1000 stress-ng-vm
+Nov 22 17:04:29 lab01-shakenov kernel: [   4246]  1000  4246     4028     1000      306      694         0    77824        0             0 sleep
+Nov 22 17:04:29 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4236,uid=1000
+Nov 22 17:04:29 lab01-shakenov kernel: Out of memory: Killed process 4236 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:860kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:31 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:31 lab01-shakenov kernel: CPU: 3 UID: 1000 PID: 4248 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:31 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:31 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:31 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:31 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:31 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:31 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:31 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:31 lab01-shakenov kernel: [   4240]  1000  4240   921528   906969   906761      194        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:31 lab01-shakenov kernel: [   4248]  1000  4248   921528   845534   845321      200        13  6864896        0          1000 stress-ng-vm
+Nov 22 17:04:31 lab01-shakenov kernel: [   4251]  1000  4251     4028      982      306      676         0    77824        0             0 sleep
+Nov 22 17:04:31 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4240,uid=1000
+Nov 22 17:04:31 lab01-shakenov kernel: Out of memory: Killed process 4240 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:776kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:38 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:38 lab01-shakenov kernel: CPU: 1 UID: 1000 PID: 4252 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:38 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:38 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:38 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:38 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:38 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:38 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:38 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:38 lab01-shakenov kernel: [   4248]  1000  4248   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:38 lab01-shakenov kernel: [   4252]  1000  4252   921528   843931   843785      132        14  6852608        0          1000 stress-ng-vm
+Nov 22 17:04:38 lab01-shakenov kernel: [   4258]  1000  4258     4028      970      306      664         0    77824        0             0 sleep
+Nov 22 17:04:38 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4248,uid=1000
+Nov 22 17:04:38 lab01-shakenov kernel: Out of memory: Killed process 4248 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:40 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:40 lab01-shakenov kernel: CPU: 3 UID: 1000 PID: 4261 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:40 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:40 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:40 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:40 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:40 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:40 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:40 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:40 lab01-shakenov kernel: [   4252]  1000  4252   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:40 lab01-shakenov kernel: [   4261]  1000  4261   921528   845476   845321      142        13  6864896        0          1000 stress-ng-vm
+Nov 22 17:04:40 lab01-shakenov kernel: [   4264]  1000  4264     4028      962      306      656         0    77824        0             0 sleep
+Nov 22 17:04:40 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4252,uid=1000
+Nov 22 17:04:40 lab01-shakenov kernel: Out of memory: Killed process 4252 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:47 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:47 lab01-shakenov kernel: CPU: 2 UID: 1000 PID: 4265 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:47 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:47 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:47 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:47 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:47 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:47 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:47 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:47 lab01-shakenov kernel: [   4261]  1000  4261   921528   906983   906761      208        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:47 lab01-shakenov kernel: [   4265]  1000  4265   921528   843510   843273      223        14  6848512        0          1000 stress-ng-vm
+Nov 22 17:04:47 lab01-shakenov kernel: [   4271]  1000  4271     4028     1126      306      820         0    77824        0             0 sleep
+Nov 22 17:04:47 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4261,uid=1000
+Nov 22 17:04:47 lab01-shakenov kernel: Out of memory: Killed process 4261 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:832kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:49 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:49 lab01-shakenov kernel: CPU: 3 UID: 1000 PID: 4272 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:49 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:49 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:49 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:49 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:49 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:49 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:49 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:49 lab01-shakenov kernel: [   4265]  1000  4265   921528   906949   906761      174        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:49 lab01-shakenov kernel: [   4272]  1000  4272   921528   844476   844297      166        13  6856704        0          1000 stress-ng-vm
+Nov 22 17:04:49 lab01-shakenov kernel: [   4275]  1000  4275     4028      976      306      670         0    73728        0             0 sleep
+Nov 22 17:04:49 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4265,uid=1000
+Nov 22 17:04:49 lab01-shakenov kernel: Out of memory: Killed process 4265 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:696kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:56 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:56 lab01-shakenov kernel: CPU: 2 UID: 1000 PID: 4276 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:56 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:56 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:56 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:56 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:56 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:56 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:56 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:56 lab01-shakenov kernel: [   4272]  1000  4272   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:56 lab01-shakenov kernel: [   4276]  1000  4276   921528   843931   843785      132        14  6852608        0          1000 stress-ng-vm
+Nov 22 17:04:56 lab01-shakenov kernel: [   4282]  1000  4282     4028      974      306      668         0    77824        0             0 sleep
+Nov 22 17:04:56 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4272,uid=1000
+Nov 22 17:04:56 lab01-shakenov kernel: Out of memory: Killed process 4272 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:04:58 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:04:58 lab01-shakenov kernel: CPU: 3 UID: 1000 PID: 4283 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:04:58 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:04:58 lab01-shakenov kernel: Call Trace:
+Nov 22 17:04:58 lab01-shakenov kernel:  <TASK>
+Nov 22 17:04:58 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:04:58 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:04:58 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:04:58 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:04:58 lab01-shakenov kernel: [   4276]  1000  4276   921528   906908   906761      133        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:04:58 lab01-shakenov kernel: [   4283]  1000  4283   921528   845467   845321      133        13  6864896        0          1000 stress-ng-vm
+Nov 22 17:04:58 lab01-shakenov kernel: [   4286]  1000  4286     4028      970      306      664         0    69632        0             0 sleep
+Nov 22 17:04:58 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4276,uid=1000
+Nov 22 17:04:58 lab01-shakenov kernel: Out of memory: Killed process 4276 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:532kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:05 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:05 lab01-shakenov kernel: CPU: 3 UID: 1000 PID: 4287 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:05 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:05 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:05 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:05 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:05 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:05 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:05 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:05 lab01-shakenov kernel: [   4283]  1000  4283   921528   907030   906761      255        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:05 lab01-shakenov kernel: [   4287]  1000  4287   921528   844069   843785      270        14  6852608        0          1000 stress-ng-vm
+Nov 22 17:05:05 lab01-shakenov kernel: [   4293]  1000  4293     4028     1159      306      853         0    81920        0             0 sleep
+Nov 22 17:05:05 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4283,uid=1000
+Nov 22 17:05:05 lab01-shakenov kernel: Out of memory: Killed process 4283 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:1020kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:07 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:07 lab01-shakenov kernel: CPU: 0 UID: 1000 PID: 4294 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:07 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:07 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:07 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:07 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:07 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:07 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:07 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:07 lab01-shakenov kernel: [   4287]  1000  4287   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:07 lab01-shakenov kernel: [   4294]  1000  4294   921528   837786   837641      132        13  6803456        0          1000 stress-ng-vm
+Nov 22 17:05:07 lab01-shakenov kernel: [   4297]  1000  4297     4028      982      306      676         0    77824        0             0 sleep
+Nov 22 17:05:07 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4287,uid=1000
+Nov 22 17:05:07 lab01-shakenov kernel: Out of memory: Killed process 4287 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:14 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:14 lab01-shakenov kernel: CPU: 2 UID: 1000 PID: 4298 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:14 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:14 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:14 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:14 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:14 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:14 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:14 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:14 lab01-shakenov kernel: [   4294]  1000  4294   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:14 lab01-shakenov kernel: [   4298]  1000  4298   921528   842395   842249      132        14  6840320        0          1000 stress-ng-vm
+Nov 22 17:05:14 lab01-shakenov kernel: [   4304]  1000  4304     4028      969      305      664         0    73728        0             0 sleep
+Nov 22 17:05:14 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4294,uid=1000
+Nov 22 17:05:14 lab01-shakenov kernel: Out of memory: Killed process 4294 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:16 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:16 lab01-shakenov kernel: CPU: 0 UID: 1000 PID: 4305 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:16 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:16 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:16 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:16 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:16 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:16 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:16 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:16 lab01-shakenov kernel: [   4298]  1000  4298   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:16 lab01-shakenov kernel: [   4305]  1000  4305   921528   840346   840201      132        13  6823936        0          1000 stress-ng-vm
+Nov 22 17:05:16 lab01-shakenov kernel: [   4308]  1000  4308     4028      978      306      672         0    77824        0             0 sleep
+Nov 22 17:05:16 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4298,uid=1000
+Nov 22 17:05:16 lab01-shakenov kernel: Out of memory: Killed process 4298 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:23 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:23 lab01-shakenov kernel: CPU: 2 UID: 1000 PID: 4309 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:23 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:23 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:23 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:23 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:23 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:23 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:23 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:23 lab01-shakenov kernel: [   4305]  1000  4305   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:23 lab01-shakenov kernel: [   4309]  1000  4309   921528   841883   841737      132        14  6836224        0          1000 stress-ng-vm
+Nov 22 17:05:23 lab01-shakenov kernel: [   4315]  1000  4315     4028      977      305      672         0    73728        0             0 sleep
+Nov 22 17:05:23 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4305,uid=1000
+Nov 22 17:05:23 lab01-shakenov kernel: Out of memory: Killed process 4305 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:25 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:25 lab01-shakenov kernel: CPU: 0 UID: 1000 PID: 4316 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:25 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:25 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:25 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:25 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:25 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:25 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:25 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:25 lab01-shakenov kernel: [   4309]  1000  4309   921528   906907   906761      132        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:25 lab01-shakenov kernel: [   4316]  1000  4316   921528   839322   839177      132        13  6815744        0          1000 stress-ng-vm
+Nov 22 17:05:25 lab01-shakenov kernel: [   4319]  1000  4319     4028      974      306      668         0    69632        0             0 sleep
+Nov 22 17:05:25 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4309,uid=1000
+Nov 22 17:05:25 lab01-shakenov kernel: Out of memory: Killed process 4309 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:528kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:32 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:32 lab01-shakenov kernel: CPU: 2 UID: 1000 PID: 4320 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:32 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:32 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:32 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:32 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:32 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:32 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:32 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:32 lab01-shakenov kernel: [   4316]  1000  4316   921528   907034   906761      259        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:32 lab01-shakenov kernel: [   4320]  1000  4320   921528   843557   843273      270        14  6848512        0          1000 stress-ng-vm
+Nov 22 17:05:32 lab01-shakenov kernel: [   4326]  1000  4326     4028      976      306      670         0    69632        0             0 sleep
+Nov 22 17:05:32 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4316,uid=1000
+Nov 22 17:05:32 lab01-shakenov kernel: Out of memory: Killed process 4316 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:1036kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
+Nov 22 17:05:34 lab01-shakenov kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x440dc0(GFP_KERNEL_ACCOUNT|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 22 17:05:34 lab01-shakenov kernel: CPU: 0 UID: 1000 PID: 4327 Comm: stress-ng-vm Not tainted 7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 22 17:05:34 lab01-shakenov kernel: Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 02/17/2026
+Nov 22 17:05:34 lab01-shakenov kernel: Call Trace:
+Nov 22 17:05:34 lab01-shakenov kernel:  <TASK>
+Nov 22 17:05:34 lab01-shakenov kernel:  show_stack+0x49/0x60
+Nov 22 17:05:34 lab01-shakenov kernel:  dump_stack_lvl+0x5f/0x90
+Nov 22 17:05:34 lab01-shakenov kernel:  dump_stack+0x10/0x18
+Nov 22 17:05:34 lab01-shakenov kernel:  dump_header+0x48/0x1c7
+--
+Nov 22 17:05:34 lab01-shakenov kernel: [   4320]  1000  4320   921528   907024   906761      249        14  7356416        0          1000 stress-ng-vm
+Nov 22 17:05:34 lab01-shakenov kernel: [   4327]  1000  4327   921528   842516   842249      254        13  6840320        0          1000 stress-ng-vm
+Nov 22 17:05:34 lab01-shakenov kernel: [   4330]  1000  4330     4028     1458      305     1153         0    77824        0             0 sleep
+Nov 22 17:05:34 lab01-shakenov kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=4320,uid=1000
+Nov 22 17:05:34 lab01-shakenov kernel: Out of memory: Killed process 4320 (stress-ng-vm) total-vm:3686112kB, anon-rss:3627044kB, file-rss:996kB, shmem-rss:56kB, UID:1000 pgtables:7184kB oom_score_adj:1000
