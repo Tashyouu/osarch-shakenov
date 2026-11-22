@@ -42,38 +42,37 @@ One identical machine would be too weak for the developer and designer, and wast
 2. Checked compatibility as in Lab 3: CPU socket and board socket, memory type, M.2 slot and NVMe SSD, total power and power supply. PCPartPicker was used only for compatibility and power. It does not price in tenge.
 3. Took every price in tenge from a Kazakhstan vendor listing (mostly Flexcom.kz, found through the e-katalog.kz and alfa.kz price pages), with the date, and saved a dated screenshot (see [budget.csv](budget.csv)).
 4. Every machine has at least 16 GB memory, a 1 TB SSD, a licensed operating system and a monitor.
-5. The biggest finding was the price of memory: a 32 GB DDR5 kit (from 332 235 KZT) cost more than three Ryzen 5 7600 on the day I checked, so memory decisions decided the budget. The prices moved while I worked: my first 32 GB price was 230 168 KZT, and I had to rebuild the budget around the new one. The margin left is only 87 220 KZT.
+5. The biggest finding was the price of memory: a 32 GB DDR5 kit (from 289 119 KZT, Kingston from 332 235) cost almost three Ryzen 5 7600 on the day I checked, so memory decisions decided the budget. The prices moved while I worked: my first 32 GB price was 230 168 KZT, and I had to rebuild the budget around the new one. The margin left is only 87 536 KZT.
 
 **Totals (from budget.csv, prices taken 2026-11-22)**
 
 | Role | Total, KZT |
 |---|---|
-| Accountant | 556 841 |
-| Sales | 541 235 |
-| Web developer | 802 161 |
-| Designer | 1 012 543 |
-| **Grand total** | **2 912 780 (budget 3 000 000, margin 87 220)** |
+| Accountant | 599 799 |
+| Sales | 584 193 |
+| Web developer | 759 045 |
+| Designer | 969 427 |
+| **Grand total** | **2 912 464 (budget 3 000 000, margin 87 536)** |
 
 ### Answer 1: which machine do I upgrade first, in 18 months?
 
-Web developer, the memory. The board has four memory slots and only two are used, so I can add a second 2 x 16 GB kit and reach 64 GB without throwing anything away (a 32 GB kit now costs 332 235 KZT or more, so adding a second kit later is a real cost, but it needs no new board or CPU). Containers, virtual machines and a local database are the load that grows fastest, and on this machine memory is the first resource to run out. The AM5 platform and DDR5 chosen in section 2 are what make this a simple add-on.
+Web developer, the memory. The board has four memory slots and only two are used, so I can add a second 2 x 16 GB kit and reach 64 GB without throwing anything away (a 32 GB kit now costs 289 119 KZT or more, so adding a second kit later is a real cost, but it needs no new board or CPU). Containers, virtual machines and a local database are the load that grows fastest, and on this machine memory is the first resource to run out. The AM5 platform and DDR5 chosen in section 2 are what make this a simple add-on.
 
 ### Answer 2: the same four as pre-built machines
 
-I could not get verified pre-built prices for four comparable machines on 2026-11-22: the Kazakhstan vendor pages I could reach showed either gaming machines with a different part mix or prices I could not confirm, and I will not put a made-up number in the table. The comparison below is therefore about what changes, not about the exact price gap.
+I priced the closest pre-built systems from alfa.kz (Almaty marketplace, delivery in Almaty). Prices seen on 2026-11-22. A pre-built listing has no monitor and the operating system is not stated, so I added the same monitor and Windows 11 Pro that I used in my builds, to compare like with like.
 
-What the company gains by buying pre-built: one seller who tests and delivers the machine, a single warranty and support contact for the whole computer, and no assembly time for me (four machines by hand is hours of work).
-What it loses: choice of parts and the upgrade path. The pre-built listing I looked at on alfa.kz (item 8583273) had one 16 GB memory module (single channel, so no dual-channel memory), an entry-level A620 board and a graphics card nobody asked for, which is a typical way pre-builts save money in the wrong place for an office. It also loses control over which licensed Windows is included and whether the monitor is included.
-**Pre-built prices (fill in from the vendor page, same day, with a screenshot named prebuilt-*.png):**
+| Role | Pre-built model (alfa.kz) | Pre-built, KZT | + monitor + Windows 11 Pro, KZT | Built by me (budget.csv), KZT | Date | Link |
+|---|---|---|---|---|---|---|
+| Accountant | PULSER Eco 100, Ryzen 5 5600GT, DDR4 16 GB, SSD 1 TB | 235 107 | 389 966 | 599 799 | 2026-11-22 | https://alfa.kz/pc/computers/amd/ryzen_5/pulser/8539143 |
+| Sales | same PULSER Eco 100 (16 GB, the cheapest suitable one) | 235 107 | 374 360 | 584 193 | 2026-11-22 | https://alfa.kz/pc/computers/amd/ryzen_5/pulser/8539143 |
+| Web developer | PULSER Advanced 405M, Ryzen 5 7500F, DDR5 32 GB, SSD 1 TB, RTX 5060 | 1 027 500 | 1 226 612 | 759 045 | 2026-11-22 | https://alfa.kz/pc/computers/amd/ryzen_5/pulser/8682058 |
+| Designer | same PULSER Advanced 405M (RTX 5060 8 GB) | 1 027 500 | 1 246 233 | 969 427 | 2026-11-22 | https://alfa.kz/pc/computers/amd/ryzen_5/pulser/8682058 |
 
-| Role | Pre-built model (vendor) | Price, KZT | Date | Link | Built-by-me price (budget.csv) |
-|---|---|---|---|---|---|
-| Accountant | TODO | TODO | 2026-11-22 | TODO | 556 841 |
-| Sales | TODO | TODO | 2026-11-22 | TODO | 541 235 |
-| Web developer | TODO | TODO | 2026-11-22 | TODO | 802 161 |
-| Designer | TODO | TODO | 2026-11-22 | TODO | 1 012 543 |
+Sum of the four pre-built options with monitors and Windows: 3 237 171 KZT, over the 3 000 000 budget, against 2 912 464 for my builds. Note that I found no pre-built with 32 GB and no graphics card, so for the developer the pre-built pays for a GPU that is not needed.
 
-The price difference is the one thing the text above does not answer. The exact quote must be added from a vendor listing with a date before this report can be called complete.
+**What the company gains by buying pre-built:** one seller who tests and delivers the machine, one warranty and support contact for the whole computer, and no assembly time (four machines by hand is hours of work). For the two cheap roles the pre-built is cheaper: it is an older platform (AM4, DDR4), so the saving comes from a platform without an upgrade path.
+**What it loses:** choice of parts and the upgrade path (the cheap office machines are AM4 with DDR4, so a later CPU or memory upgrade means a new board). The expensive ones include a graphics card that the developer does not need, which makes them more expensive than my builds. The seller also chooses the power supply, the case and the memory brand, and the listing does not say whether Windows is included.
 
 ### Answer 3: who complains about performance within a month, and about what?
 
@@ -91,5 +90,5 @@ The designer, about large files and video. I put the money into the monitor and 
 
 ## 5. What I would do differently
 
-I would check the price of the most expensive part first. I picked the platform and the roles, and only later found that a 32 GB DDR5 kit costs more than twice the CPU, which forced me to redo the trade-offs and left a margin of only 87 220 KZT. Next time I would look up memory, SSD and GPU prices before choosing anything else.
+I would check the price of the most expensive part first. I picked the platform and the roles, and only later found that a 32 GB DDR5 kit costs more than twice the CPU, which forced me to redo the trade-offs and left a margin of only 87 536 KZT. Next time I would look up memory, SSD and GPU prices before choosing anything else.
 I would also record each price at the moment I see it, with a screenshot and the vendor name. The same Ryzen 5 7600 appeared at two different prices in two listings, and for the Ryzen 7 7700 BOX I only had the lowest of five offers and not the name of the shop, which I had to leave to be checked.

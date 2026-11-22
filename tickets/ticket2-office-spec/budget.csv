@@ -1,41 +1,41 @@
 role,component,model,price_kzt,source,date
 accountant,CPU,AMD Ryzen 5 7600 BOX (LS Computers via alfa.kz),99927,https://alfa.kz/parts/cpu/amd/ryzen_5/8277796,2026-11-22
 accountant,Motherboard,"MSI PRO B650M-P mATX AM5 DDR5 (lowest e-katalog.kz offer, shop: see screenshot)",61990,https://e-katalog.kz/MSI-PRO-B650M-P.htm,2026-11-22
-accountant,Memory,"Kingston FURY Beast 2x8 GB DDR5-6000 KF560C36BBEK2-16 (lowest e-katalog.kz offer, shop: see screenshot)",126377,https://e-katalog.kz/KINGSTON-FURY-KF560C36BBEK2-16.htm,2026-11-22
+accountant,Memory,"Kingston FURY Beast 2x8 GB DDR5-6000 CL30 KF560C30BBEK2-16 (Ants.kz, lowest of 5 offers)",169335,https://e-katalog.kz/KINGSTON-FURY-KF560C30BBEK2-16.htm,2026-11-22
 accountant,SSD,"Kingston NV3 1 TB NVMe SNV3S/1000G (lowest e-katalog.kz offer, shop: see screenshot)",74457,https://e-katalog.kz/KINGSTON-NV3.htm,2026-11-22
 accountant,Power supply,MSI MAG A550BN 550 W 80+ Bronze (Flexcom.kz),19698,https://e-katalog.kz/MSI-A550BN.htm,2026-11-22
 accountant,Case,"FSP CMT223S ATX mid tower no PSU (lowest e-katalog.kz offer, shop: see screenshot)",19533,https://e-katalog.kz/FSP-CMT223S.htm,2026-11-22
 accountant,Monitor,LG 24MR400-B 23.8 inch IPS 100 Hz (Forcecom.kz),52200,https://e-katalog.kz/LG-24MR400.htm,2026-11-22
 accountant,Operating system,Microsoft Windows 11 Pro FQC-10572 ESD licence (alfa.kz),102659,https://alfa.kz/pc/soft/os/microsoft/all/7651173,2026-11-22
-accountant,TOTAL,,556841,,2026-11-22
+accountant,TOTAL,,599799,,2026-11-22
 sales,CPU,AMD Ryzen 5 7600 BOX (LS Computers via alfa.kz),99927,https://alfa.kz/parts/cpu/amd/ryzen_5/8277796,2026-11-22
 sales,Motherboard,"MSI PRO B650M-P mATX AM5 DDR5 (lowest e-katalog.kz offer, shop: see screenshot)",61990,https://e-katalog.kz/MSI-PRO-B650M-P.htm,2026-11-22
-sales,Memory,"Kingston FURY Beast 2x8 GB DDR5-6000 KF560C36BBEK2-16 (lowest e-katalog.kz offer, shop: see screenshot)",126377,https://e-katalog.kz/KINGSTON-FURY-KF560C36BBEK2-16.htm,2026-11-22
+sales,Memory,"Kingston FURY Beast 2x8 GB DDR5-6000 CL30 KF560C30BBEK2-16 (Ants.kz, lowest of 5 offers)",169335,https://e-katalog.kz/KINGSTON-FURY-KF560C30BBEK2-16.htm,2026-11-22
 sales,SSD,"Kingston NV3 1 TB NVMe SNV3S/1000G (lowest e-katalog.kz offer, shop: see screenshot)",74457,https://e-katalog.kz/KINGSTON-NV3.htm,2026-11-22
 sales,Power supply,MSI MAG A550BN 550 W 80+ Bronze (Flexcom.kz),19698,https://e-katalog.kz/MSI-A550BN.htm,2026-11-22
 sales,Case,"FSP CMT223S ATX mid tower no PSU (lowest e-katalog.kz offer, shop: see screenshot)",19533,https://e-katalog.kz/FSP-CMT223S.htm,2026-11-22
 sales,Monitor,Philips 24E2N1110 23.8 inch IPS 120 Hz (Flexcom.kz),36594,https://e-katalog.kz/PHILIPS-24E2N1110.htm,2026-11-22
 sales,Operating system,Microsoft Windows 11 Pro FQC-10572 ESD licence (alfa.kz),102659,https://alfa.kz/pc/soft/os/microsoft/all/7651173,2026-11-22
-sales,TOTAL,,541235,,2026-11-22
+sales,TOTAL,,584193,,2026-11-22
 web developer,CPU,"AMD Ryzen 7 7700 OEM, no cooler (lowest e-katalog.kz offer, shop: see screenshot)",91726,https://e-katalog.kz/AMD-7700-OEM.htm,2026-11-22
 web developer,CPU cooler,ID-COOLING SE-802-SD (needed: OEM CPU has no cooler),3410,https://e-katalog.kz/ID-COOLING-SE-802-SD.htm,2026-11-22
 web developer,Motherboard,"MSI PRO B650M-P mATX AM5 DDR5 (lowest e-katalog.kz offer, shop: see screenshot)",61990,https://e-katalog.kz/MSI-PRO-B650M-P.htm,2026-11-22
-web developer,Memory,"Kingston FURY Beast 2x16 GB DDR5-6000 KF560C36BBE2K2-32 (lowest e-katalog.kz offer, shop: see screenshot)",332235,https://e-katalog.kz/KINGSTON-FURY-KF560C36BBE2K2-32.htm,2026-11-22
+web developer,Memory,"Apacer Panther DDR5-5200 2x16 GB AH5U32G52C5227BAA-2 (Ants.kz, lowest of 2 offers)",289119,https://e-katalog.kz/APACER-AH5U32G52C5227BAA-2.htm,2026-11-22
 web developer,SSD,"Kingston NV3 1 TB NVMe SNV3S/1000G (lowest e-katalog.kz offer, shop: see screenshot)",74457,https://e-katalog.kz/KINGSTON-NV3.htm,2026-11-22
 web developer,Power supply,MSI MAG A550BN 550 W 80+ Bronze (Flexcom.kz),19698,https://e-katalog.kz/MSI-A550BN.htm,2026-11-22
 web developer,Case,"FSP CMT223S ATX mid tower no PSU (lowest e-katalog.kz offer, shop: see screenshot)",19533,https://e-katalog.kz/FSP-CMT223S.htm,2026-11-22
 web developer,Monitor,Iiyama ProLite XB2797QSU-B1 27 inch QHD IPS (Flexcom.kz),96453,https://e-katalog.kz/IIYAMA-PROLITE-XB2797QSU-B1.htm,2026-11-22
 web developer,Operating system,Microsoft Windows 11 Pro FQC-10572 ESD licence (alfa.kz),102659,https://alfa.kz/pc/soft/os/microsoft/all/7651173,2026-11-22
-web developer,TOTAL,,802161,,2026-11-22
+web developer,TOTAL,,759045,,2026-11-22
 designer,CPU,"AMD Ryzen 7 7700 OEM, no cooler (lowest e-katalog.kz offer, shop: see screenshot)",91726,https://e-katalog.kz/AMD-7700-OEM.htm,2026-11-22
 designer,CPU cooler,ID-COOLING SE-802-SD (needed: OEM CPU has no cooler),3410,https://e-katalog.kz/ID-COOLING-SE-802-SD.htm,2026-11-22
 designer,Motherboard,"MSI PRO B650M-P mATX AM5 DDR5 (lowest e-katalog.kz offer, shop: see screenshot)",61990,https://e-katalog.kz/MSI-PRO-B650M-P.htm,2026-11-22
-designer,Memory,"Kingston FURY Beast 2x16 GB DDR5-6000 KF560C36BBE2K2-32 (lowest e-katalog.kz offer, shop: see screenshot)",332235,https://e-katalog.kz/KINGSTON-FURY-KF560C36BBE2K2-32.htm,2026-11-22
+designer,Memory,"Apacer Panther DDR5-5200 2x16 GB AH5U32G52C5227BAA-2 (Ants.kz, lowest of 2 offers)",289119,https://e-katalog.kz/APACER-AH5U32G52C5227BAA-2.htm,2026-11-22
 designer,SSD,"Kingston NV3 1 TB NVMe SNV3S/1000G (lowest e-katalog.kz offer, shop: see screenshot)",74457,https://e-katalog.kz/KINGSTON-NV3.htm,2026-11-22
 designer,Graphics card,INNO3D GeForce RTX 5060 Twin X2 8 GB (Flexcom.kz),189832,https://e-katalog.kz/INNO3D-GEFORCE-RTX-5060-TWIN-X2.htm,2026-11-22
 designer,Power supply,PCCooler YK650 650 W 80+ Bronze (Flexcom.kz),20627,https://e-katalog.kz/PCCOOLER-YK.htm,2026-11-22
 designer,Case,"FSP CMT223S ATX mid tower no PSU (lowest e-katalog.kz offer, shop: see screenshot)",19533,https://e-katalog.kz/FSP-CMT223S.htm,2026-11-22
 designer,Monitor,ASUS BE27AQ 27 inch QHD IPS 99% sRGB (Flexcom.kz),116074,https://e-katalog.kz/ASUS-BE27AQ.htm,2026-11-22
 designer,Operating system,Microsoft Windows 11 Pro FQC-10572 ESD licence (alfa.kz),102659,https://alfa.kz/pc/soft/os/microsoft/all/7651173,2026-11-22
-designer,TOTAL,,1012543,,2026-11-22
-ALL,GRAND TOTAL,,2912780,,2026-11-22
+designer,TOTAL,,969427,,2026-11-22
+ALL,GRAND TOTAL,,2912464,,2026-11-22
