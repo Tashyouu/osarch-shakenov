@@ -42,21 +42,21 @@ One identical machine would be too weak for the developer and designer, and wast
 2. Checked compatibility as in Lab 3: CPU socket and board socket, memory type, M.2 slot and NVMe SSD, total power and power supply. PCPartPicker was used only for compatibility and power. It does not price in tenge.
 3. Took every price in tenge from a Kazakhstan vendor listing (mostly Flexcom.kz, found through the e-katalog.kz and alfa.kz price pages), with the date, and saved a dated screenshot (see [budget.csv](budget.csv)).
 4. Every machine has at least 16 GB memory, a 1 TB SSD, a licensed operating system and a monitor.
-5. The biggest finding was the price of memory: a 32 GB DDR5 kit cost more than twice a Ryzen 5 7600 on the day I checked, so memory decisions decided the budget. The margin left is only 39 529 KZT.
+5. The biggest finding was the price of memory: a 32 GB DDR5 kit (from 332 235 KZT) cost more than three Ryzen 5 7600 on the day I checked, so memory decisions decided the budget. The prices moved while I worked: my first 32 GB price was 230 168 KZT, and I had to rebuild the budget around the new one. The margin left is only 87 220 KZT.
 
 **Totals (from budget.csv, prices taken 2026-11-22)**
 
 | Role | Total, KZT |
 |---|---|
-| Accountant | 582 710 |
-| Sales | 644 035 |
-| Web developer | 761 672 |
-| Designer | 972 054 |
-| **Grand total** | **2 960 471 (budget 3 000 000, margin 39 529)** |
+| Accountant | 556 841 |
+| Sales | 541 235 |
+| Web developer | 802 161 |
+| Designer | 1 012 543 |
+| **Grand total** | **2 912 780 (budget 3 000 000, margin 87 220)** |
 
 ### Answer 1: which machine do I upgrade first, in 18 months?
 
-Web developer, the memory. The board has four memory slots and only two are used, so I can add a second 2 x 16 GB kit and reach 64 GB without throwing anything away (a 2 x 32 GB Kingston kit was listed at 499 500 KZT on e-katalog.kz, so adding to the existing kit is the cheaper path). Containers, virtual machines and a local database are the load that grows fastest, and on this machine memory is the first resource to run out. The AM5 platform and DDR5 chosen in section 2 are what make this a simple add-on.
+Web developer, the memory. The board has four memory slots and only two are used, so I can add a second 2 x 16 GB kit and reach 64 GB without throwing anything away (a 32 GB kit now costs 332 235 KZT or more, so adding a second kit later is a real cost, but it needs no new board or CPU). Containers, virtual machines and a local database are the load that grows fastest, and on this machine memory is the first resource to run out. The AM5 platform and DDR5 chosen in section 2 are what make this a simple add-on.
 
 ### Answer 2: the same four as pre-built machines
 
@@ -68,10 +68,10 @@ What it loses: choice of parts and the upgrade path. The pre-built listing I loo
 
 | Role | Pre-built model (vendor) | Price, KZT | Date | Link | Built-by-me price (budget.csv) |
 |---|---|---|---|---|---|
-| Accountant | TODO | TODO | 2026-11-22 | TODO | 582 710 |
-| Sales | TODO | TODO | 2026-11-22 | TODO | 644 035 |
-| Web developer | TODO | TODO | 2026-11-22 | TODO | 761 672 |
-| Designer | TODO | TODO | 2026-11-22 | TODO | 972 054 |
+| Accountant | TODO | TODO | 2026-11-22 | TODO | 556 841 |
+| Sales | TODO | TODO | 2026-11-22 | TODO | 541 235 |
+| Web developer | TODO | TODO | 2026-11-22 | TODO | 802 161 |
+| Designer | TODO | TODO | 2026-11-22 | TODO | 1 012 543 |
 
 The price difference is the one thing the text above does not answer. The exact quote must be added from a vendor listing with a date before this report can be called complete.
 
@@ -91,5 +91,5 @@ The designer, about large files and video. I put the money into the monitor and 
 
 ## 5. What I would do differently
 
-I would check the price of the most expensive part first. I picked the platform and the roles, and only later found that a 32 GB DDR5 kit costs more than twice the CPU, which forced me to redo the trade-offs and left a margin of only 39 529 KZT. Next time I would look up memory, SSD and GPU prices before choosing anything else.
+I would check the price of the most expensive part first. I picked the platform and the roles, and only later found that a 32 GB DDR5 kit costs more than twice the CPU, which forced me to redo the trade-offs and left a margin of only 87 220 KZT. Next time I would look up memory, SSD and GPU prices before choosing anything else.
 I would also record each price at the moment I see it, with a screenshot and the vendor name. The same Ryzen 5 7600 appeared at two different prices in two listings, and for the Ryzen 7 7700 BOX I only had the lowest of five offers and not the name of the shop, which I had to leave to be checked.
