@@ -64,7 +64,16 @@ I could not get verified pre-built prices for four comparable machines on 2026-1
 
 What the company gains by buying pre-built: one seller who tests and delivers the machine, a single warranty and support contact for the whole computer, and no assembly time for me (four machines by hand is hours of work).
 What it loses: choice of parts and the upgrade path. The pre-built listing I looked at on alfa.kz (item 8583273) had one 16 GB memory module (single channel, so no dual-channel memory), an entry-level A620 board and a graphics card nobody asked for, which is a typical way pre-builts save money in the wrong place for an office. It also loses control over which licensed Windows is included and whether the monitor is included.
-The price difference is the one thing this section does not answer. The exact quote must be added from a vendor listing with a date before this report can be called complete.
+**Pre-built prices (fill in from the vendor page, same day, with a screenshot named prebuilt-*.png):**
+
+| Role | Pre-built model (vendor) | Price, KZT | Date | Link | Built-by-me price (budget.csv) |
+|---|---|---|---|---|---|
+| Accountant | TODO | TODO | 2026-11-22 | TODO | 582 710 |
+| Sales | TODO | TODO | 2026-11-22 | TODO | 644 035 |
+| Web developer | TODO | TODO | 2026-11-22 | TODO | 761 672 |
+| Designer | TODO | TODO | 2026-11-22 | TODO | 972 054 |
+
+The price difference is the one thing the text above does not answer. The exact quote must be added from a vendor listing with a date before this report can be called complete.
 
 ### Answer 3: who complains about performance within a month, and about what?
 
@@ -84,5 +93,3 @@ The designer, about large files and video. I put the money into the monitor and 
 
 I would check the price of the most expensive part first. I picked the platform and the roles, and only later found that a 32 GB DDR5 kit costs more than twice the CPU, which forced me to redo the trade-offs and left a margin of only 39 529 KZT. Next time I would look up memory, SSD and GPU prices before choosing anything else.
 I would also record each price at the moment I see it, with a screenshot and the vendor name. The same Ryzen 5 7600 appeared at two different prices in two listings, and for the Ryzen 7 7700 BOX I only had the lowest of five offers and not the name of the shop, which I had to leave to be checked.
-
-*Token*
