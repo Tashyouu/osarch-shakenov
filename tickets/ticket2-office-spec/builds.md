@@ -1,6 +1,6 @@
 # Ticket 2: four builds
 
-> Prices are in [budget.csv](budget.csv), taken on 2026-11-22 (source and vendor for every row). Parts and prices must match the dated screenshots in evidence/vendor-quotes/.
+> Prices are in [budget.csv](budget.csv), taken on 2026-11-22 (source and vendor for every row). Screenshots of the prices are in evidence/vendor-quotes/.
 > Numbers marked "estimate" are my estimates, not measurements.
 
 **Common platform for all four: AMD AM5 with DDR5.** One socket and one memory type means any machine can take a newer CPU or more memory later, which is what "last a few years" needs. The board (MSI PRO B650M-P) has 4 memory slots and 2 M.2 slots. The cheaper DDR4 / AM4 platform has no upgrade path left.
@@ -42,11 +42,11 @@ Compatibility checked as in Lab 3: CPU socket and board socket (AM5), board memo
 **Bottleneck:** memory first, then storage speed. Containers and a virtual machine each hold their own memory, and the database and build tools read and write a lot. After that comes the CPU, when builds run.
 
 **Trade-off:** Ryzen 7 7700 OEM without cooler (8 cores for builds and VMs; a separate AM5 cooler is added), 32 GB of memory in 2 of 4 slots so it can grow to 64 GB later, and a 27 inch QHD monitor for more screen space. I accepted no graphics card, because the developer does not need a GPU.
-**Alternative not taken:** a Ryzen 9. Rejected, it costs much more and the extra cores would be used only a small part of the day. I also considered Ubuntu instead of Windows to save the licence (107 779 KZT), but the company may need Windows-only tools, so Windows 11 Pro with WSL2 is the safer choice (confirm this in your own words).
+**Alternative not taken:** a Ryzen 9. Rejected, it costs much more and the extra cores would be used only a small part of the day. I also considered Ubuntu instead of Windows to save the licence (102 659 KZT), but the company may need Windows-only tools, so Windows 11 Pro with WSL2 is the safer choice.
 
 **Parts:** Ryzen 7 7700 OEM + ID-COOLING SE-802-SD cooler, MSI PRO B650M-P, 32 GB DDR5-5200 (2 x 16 GB, Apacer Panther), Kingston NV3 1 TB, MSI MAG A550BN 550 W, FSP CMT223S case, Iiyama ProLite XB2797QSU-B1 27 inch QHD IPS, Windows 11 Pro.
 **Power check:** estimate about 150 to 200 W.
-**Total:** 759 045 KZT (budget.csv, web developer rows)
+**Total:** 759 629 KZT (budget.csv, web developer rows)
 
 ## Build 4: designer
 
@@ -59,7 +59,7 @@ Compatibility checked as in Lab 3: CPU socket and board socket (AM5), board memo
 
 **Parts:** Ryzen 7 7700 OEM + ID-COOLING SE-802-SD cooler, MSI PRO B650M-P, 32 GB DDR5-5200 (2 x 16 GB, Apacer Panther), Kingston NV3 1 TB, INNO3D RTX 5060 Twin X2 8 GB, PCCooler YK650 650 W, FSP CMT223S case, ASUS BE27AQ 27 inch QHD IPS, Windows 11 Pro.
 **Power check:** estimate about 250 to 350 W with the graphics card; the card maker recommends a 550 W unit, so 650 W has a margin.
-**Total:** 969 427 KZT (budget.csv, designer rows)
+**Total:** 970 011 KZT (budget.csv, designer rows)
 
 ## Grand total
 
@@ -67,8 +67,8 @@ Compatibility checked as in Lab 3: CPU socket and board socket (AM5), board memo
 |---|---|
 | Accountant | 599 799 |
 | Sales | 584 193 |
-| Web developer | 759 045 |
-| Designer | 969 427 |
-| **Grand total** | **2 912 464 (budget 3 000 000, margin 87 536)** |
+| Web developer | 759 629 |
+| Designer | 970 011 |
+| **Grand total** | **2 913 632 (budget 3 000 000, margin 86 368)** |
 
-The margin is only 87 536 KZT, about 2.9% of the budget. It covers no keyboards, mice, UPS or cables.
+The margin is only 86 368 KZT, about 2.9% of the budget. It covers no keyboards, mice, UPS or cables.
