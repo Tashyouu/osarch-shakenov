@@ -1,4 +1,4 @@
-# Lab 5 — Encoding forensics
+# Lab 5 - Encoding forensics
 
 Name: Tamerlan Shakenov · Date: 22.11.2026 · Tools: Ubuntu Server 26.04.1 LTS guest (VMware Workstation Pro) + Git Bash / PowerShell on Windows 10 host
 
@@ -12,9 +12,9 @@ Name: Tamerlan Shakenov · Date: 22.11.2026 · Tools: Ubuntu Server 26.04.1 LTS 
 
 - `file` said: `Non-ISO extended-ASCII text, with CRLF line terminators` (evidence/file-before.txt)
 - First 16 bytes: `49 44 3b d4 e0 ec e8 eb e8 ff 3b c8 ec ff 3b ce` (evidence/hexdump-before.txt)
-- **Encoding**: RK1048 — because single-byte high characters are used, and Kazakh letters (Ә = A3, Қ etc.) decode correctly only with RK1048. Windows-1251 produced wrong characters for Kazakh names.
-- **Line ending**: CRLF — because lines end with `0D 0A`
-- **BOM**: no — file does not start with `EF BB BF` or `FF FE`
+- **Encoding**: RK1048 - because single-byte high characters are used, and Kazakh letters (Ә = A3, Қ etc.) decode correctly only with RK1048. Windows-1251 produced wrong characters for Kazakh names.
+- **Line ending**: CRLF - because lines end with `0D 0A`
+- **BOM**: no - file does not start with `EF BB BF` or `FF FE`
 - **Separator**: semicolon (`;`)
 
 In the fixed file I **added a UTF-8 BOM** so that Excel recognises the encoding on double-click. I kept CRLF line endings because Excel and Windows users expect them.
@@ -50,10 +50,10 @@ First I tried decoding with Windows-1251. Russian names looked almost correct, b
 
 ## Evidence
 
-- [evidence/staff-broken.csv](evidence/staff-broken.csv) — original file, never modified
-- [evidence/staff-fixed.csv](evidence/staff-fixed.csv) — converted file
-- [evidence/file-before.txt](evidence/file-before.txt) — output of `file` before any change
-- [evidence/hexdump-before.txt](evidence/hexdump-before.txt) — first bytes in hex
-- [evidence/file-after.txt](evidence/file-after.txt) — `file` + hex after conversion
-- [evidence/opens-correctly.png](evidence/opens-correctly.png) — Excel + LibreOffice + terminal side-by-side
-- [scripts/fix.sh](scripts/fix.sh) — the conversion script used
+- [evidence/staff-broken.csv](evidence/staff-broken.csv) - original file, never modified
+- [evidence/staff-fixed.csv](evidence/staff-fixed.csv) - converted file
+- [evidence/file-before.txt](evidence/file-before.txt) - output of `file` before any change
+- [evidence/hexdump-before.txt](evidence/hexdump-before.txt) - first bytes in hex
+- [evidence/file-after.txt](evidence/file-after.txt) - `file` + hex after conversion
+- [evidence/opens-correctly.png](evidence/opens-correctly.png) - Excel + LibreOffice + terminal side-by-side
+- [scripts/fix.sh](scripts/fix.sh) - the conversion script used
